@@ -1,0 +1,127 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\title{JEE problem}
+\author{ee18btech11040 and ee18btech11019}
+\date{14 February 2019}
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Problem}
+A circle passes through the points \begin{bmatrix}
+2\\
+3
+\end{bmatrix} and \begin{bmatrix}
+4\\
+5
+\end{bmatrix}. If its centre lies on the line \begin{bmatrix}
+-1 & 4
+\end{bmatrix}x + 3 = 0, find its radius.
+\end{frame}
+
+\begin{frame}{Solution}
+The centre of the circle will lie on the line  \begin{bmatrix}
+-1 & 4
+\end{bmatrix}x + 3 = 0 and the perpendicular bisector of the line joining the points \begin{bmatrix}
+2\\
+3
+\end{bmatrix} and \begin{bmatrix}
+4\\
+5
+\end{bmatrix}. Basically it is the point of intersection of these two lines.
+
+
+Consider the following points A = \begin{bmatrix}
+2\\
+3
+\end{bmatrix} and B =\begin{bmatrix}
+4\\
+5
+\end{bmatrix}
+The mid point of the 2 points is       ( \begin{bmatrix}
+2\\
+3
+\end{bmatrix} + \begin{bmatrix}
+4\\
+5
+\end{bmatrix} ) / 2 = \begin{bmatrix}
+3\\
+4
+\end{bmatrix}
+\end{frame}
+
+\begin{frame}{continued...}
+
+A line passing through the point P = \begin{bmatrix}
+3\\
+4
+\end{bmatrix} and perpendicular to the line joining the given points is \begin{equation}
+    n^T(x - P) = 0
+    \end{equation}
+Where  n is B - A. x also satisfies the condition \begin{bmatrix}
+-1 & 4
+\end{bmatrix}x + 3 = 0.
+
+therefore, n=\begin{bmatrix}
+4\\
+5
+\end{bmatrix}-\begin{bmatrix}
+2\\
+3
+\end{bmatrix}=\begin{bmatrix}
+2\\
+2
+\end{bmatrix}
+therefore, \begin{bmatrix}
+2&2\\
+-1&4
+\end{bmatrix}x=\begin{bmatrix}
+14\\
+-3
+\end{bmatrix}
+\end{frame}
+\begin{frame}
+That is solving for the intersection of the two lines , as the perpendicular bisector passes through the centre
+\begin{equation}
+x=\begin{bmatrix}
+2&2\\
+-1&4
+\end{bmatrix}^{-1}\begin{bmatrix}
+14\\
+-3
+\end{bmatrix}
+\end{equation}
+\therefore  Centre: x=\begin{bmatrix}
+6.2\\
+0.8
+\end{bmatrix}
+
+\end{frame}
+\begin{frame}
+Radius is the distance between the centre and point on circumference
+
+
+radius= distance between A and x,
+
+
+x-A = \begin{bmatrix}
+6.2\\
+0.8
+\end{bmatrix} - \begin{bmatrix}
+2\\
+3
+\end{bmatrix} = \begin{bmatrix}
+4.2\\-2.2
+\end{bmatrix} 
+\therefore  Radius = \sqrt{(4.2)^2+(-2.2)^2} = 4.7413
+\end{frame}
+
+\begin{frame}{{GRAPH}}
+\includegraphics[scale = 0.65]{Figure_1.png} 
+\end{frame}
+\end{document}
+
